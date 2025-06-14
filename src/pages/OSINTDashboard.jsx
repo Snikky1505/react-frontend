@@ -125,7 +125,7 @@ return (
     </div>
 
     {/* Stats Cards */}
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <Card className="bg-gray-950 border-gray-900">
         <CardContent className="p-6">
             <div className="flex items-center justify-between">
@@ -148,7 +148,7 @@ return (
             </div>
         </CardContent>
         </Card>
-        <Card className="bg-gray-950 border-gray-900">
+        {/* <Card className="bg-gray-950 border-gray-900">
         <CardContent className="p-6">
             <div className="flex items-center justify-between">
             <div>
@@ -158,7 +158,7 @@ return (
             <CheckCircle className="h-8 w-8 text-green-400" />
             </div>
         </CardContent>
-        </Card>
+        </Card> */}
         <Card className="bg-gray-950 border-gray-900">
         <CardContent className="p-6">
             <div className="flex items-center justify-between">
