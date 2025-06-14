@@ -198,8 +198,8 @@ return (
             <CardHeader>
             <CardTitle className="flex items-center space-x-2">
                 <AlertTriangle className="h-5 w-5 text-red-400" />
-                <span>Data Breach Analysis</span>
-                <Badge variant="destructive">{breachedSources.length} breaches found</Badge>
+                <span>Summary of Discovered Data</span>
+                <Badge variant="destructive">{breachedSources.length} discovered data</Badge>
             </CardTitle>
             </CardHeader>
             <CardContent>
