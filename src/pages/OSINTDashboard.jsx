@@ -130,7 +130,7 @@ return (
         <CardContent className="p-6">
             <div className="flex items-center justify-between">
             <div>
-                <p className="text-sm text-gray-400">Data Breaches</p>
+                <p className="text-sm text-gray-400">Data Found</p>
                 <p className="text-2xl font-bold text-red-400">847</p>
             </div>
             <AlertTriangle className="h-8 w-8 text-red-400" />
