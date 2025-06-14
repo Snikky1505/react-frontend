@@ -163,10 +163,10 @@ return (
         <CardContent className="p-6">
             <div className="flex items-center justify-between">
             <div>
-                <p className="text-sm text-gray-400">Risk Score</p>
-                <p className="text-2xl font-bold text-yellow-400">7.2/10</p>
+                <p className="text-sm text-gray-400">Most Frequent Keywords</p>
+                <p className="text-2xl font-bold text-green-400">John Doe</p>
             </div>
-            <Shield className="h-8 w-8 text-yellow-400" />
+            <Search className="h-8 w-8 text-green-400" />
             </div>
         </CardContent>
         </Card>
@@ -177,7 +177,7 @@ return (
         <TabsList className="bg-gray-950 border-gray-900 text-white">
         <TabsTrigger value="breaches" className="data-[state=active]:bg-gray-800">
             <AlertTriangle className="h-4 w-4 mr-2" />
-            Data Breaches ({breachedSources.length})
+            Summary ({breachedSources.length})
         </TabsTrigger>
         <TabsTrigger value="social" className="data-[state=active]:bg-gray-800">
             <Users className="h-4 w-4 mr-2" />

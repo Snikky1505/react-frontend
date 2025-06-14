@@ -12,11 +12,13 @@ function LoginPage({ onLogin }) {
     companyId: '',
     rememberMe: false
   })
-  const navigate = useNavigate()
+
   const [error, setError] = useState(null)
   const [showPassword, setShowPassword] = useState(false)
   const baseUrl = import.meta.env.VITE_API_BASE_URL
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate()
+  console.log("Component rendered");
 
 
   const handleChange = (e) => {
@@ -216,8 +218,10 @@ function LoginPage({ onLogin }) {
             <div className="p-6">
               <div className="text-center text-white">
                 <button 
-                  onclick={() => navigate('/osint')}
-                  className=" inline-flex items-center justify-center rounded-3xl px-4 py-2 font-medium text-white hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 bg-gray-800 shadow-none"
+                  onClick={() => {
+                    navigate('/osint')
+                  }}
+                  className=" inline-flex items-center justify-center rounded-3xl px-4 py-2 font-medium text-white hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 bg-gray-900 shadow-none"
                 >
                   OSINT w/ SIJITU
                 </button>
