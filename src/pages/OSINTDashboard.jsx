@@ -62,8 +62,10 @@ return (
     <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
-            <Shield className="h-8 w-8 text-blue-500" />
-            <span className="text-2xl font-bold">OSINT x SIJITU</span>
+            {/* <Shield className="h-8 w-8 text-blue-500" /> */}
+            {/* <span className="text-2xl font-bold">
+                </span> */}
+                <img src="/public/sijitu-white.png" width="200px" height="100px" />  
         </div>
         {/* <nav className="hidden md:flex items-center space-x-6">
             <a href="#" className="hover:text-blue-400 transition-colors">
