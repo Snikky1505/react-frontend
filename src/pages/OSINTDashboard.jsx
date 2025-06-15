@@ -106,7 +106,7 @@ return (
         <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-6">Advanced OSINT Intelligence Platform</h1>
         <p className="text-gray-400 text-center mb-8">
-            Comprehensive open source intelligence gathering with breach monitoring and verification
+            Comprehensive open source intelligence gathering with data monitoring and verification
         </p>
         <div className="flex space-x-2">
             <Input
@@ -213,7 +213,7 @@ return (
                         <div className="text-2xl">{source.icon}</div>
                         <div>
                         <h3 className="font-semibold">{source.name}</h3>
-                        <Badge
+                        {/* <Badge
                             variant={
                             source.severity === "critical"
                                 ? "destructive"
@@ -224,7 +224,7 @@ return (
                             className="text-xs"
                         >
                             {source.severity}
-                        </Badge>
+                        </Badge> */}
                         </div>
                     </div>
                     <p className="text-sm text-gray-400">{source.records.toLocaleString()} records exposed</p>
