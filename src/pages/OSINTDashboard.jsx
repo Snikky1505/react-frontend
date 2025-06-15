@@ -106,7 +106,7 @@ return (
         <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-6">Advanced OSINT Intelligence Platform</h1>
         <p className="text-gray-400 text-center mb-8">
-            Comprehensive open source intelligence gathering with data monitoring and verification
+            Automated OSINT from the surface web, organized for deeper insight. Your gateway to large-scale intelligence.
         </p>
         <div className="flex space-x-2">
             <Input
