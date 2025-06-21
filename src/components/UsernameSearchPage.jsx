@@ -76,11 +76,11 @@ function UsernameSearchPage({ onPointUpdated }) {
         companyId: localStorage.getItem("companyId"),
         email: localStorage.getItem("email"),
         code: "NameScreeningFee"
-       },{
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-       });
+      },{
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+      },
+      });
       const tx_id = paymentRes.data?.data?.txId;
 
       if (!tx_id) {
@@ -113,8 +113,7 @@ function UsernameSearchPage({ onPointUpdated }) {
           }));
       });
       const results = await Promise.allSettled(requests);
-      const mergedResults = results
-      .flatMap((r) => {
+      const mergedResults = results.flatMap((r) => {
         if (r.status !== "fulfilled") return [];
         const { value } = r;
         return (value.data ?? []).map((item) => ({
@@ -690,6 +689,7 @@ function UsernameSearchPage({ onPointUpdated }) {
           )}
 
           {!loading && results.length > 0 ? (
+
             results.map((result, index) => (
               <Card key={index} className="bg-white overflow-hidden hover:shadow-md transition-shadow duration-200">
                 <CardContent className="p-0">
