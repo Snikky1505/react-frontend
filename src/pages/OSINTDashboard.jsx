@@ -34,7 +34,7 @@ const [isSearching, setIsSearching] = useState(false)
 const [isFilterOpen, setIsFilterOpen] = useState(false)
 const [activeFilters, setActiveFilters] = useState([])
 const [query, setQuery] = useState("")
-const [results, setResults] = useState([])
+const [results, setResults] = useState(null)
 const [selectedResult, setSelectedResult] = useState(null)
 const [isModalOpen, setIsModalOpen] = useState(false)
 const [modalOpen, setModalOpen] = useState(false)
@@ -438,7 +438,7 @@ return (
         )}
     </div>
 
-    {(breachedSources.length > 0 || socialProfiles.length > 0) && (
+    {(breachedSources.length > 0 || socialProfiles.length > 0) ? (
         <div>
             {/* Stats Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -571,7 +571,7 @@ return (
                 </TabsContent>
                  {/* )} */}
 
-                 <TabsContent value="location">
+                <TabsContent value="location">
                     <Card className="bg-gray-950 border-gray-900">
                         <CardHeader>
                         <CardTitle className="flex items-center space-x-2">
@@ -610,6 +610,16 @@ return (
             </Tabs>
         </div>
         
+    ) : results ? (
+        <div className="text-center py-10 text-gray-400">
+            <p className="text-xl font-semibold">No result found.</p>
+            <p className="text-sm mt-2">We couldn't find any breach, profile, or location data.</p>
+        </div>
+    ) : (
+        <div className="text-center py-10 text-gray-400">
+            <p className="text-xl font-semibold">Start your search</p>
+            <p className="text-sm mt-2">Enter a keyword or name to begin scanning the data sources.</p>
+        </div>
     )}
     </main>
 </div>
